@@ -1,0 +1,283 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(#fdf7ea, #faeed1, #ded0b6, #bbab8c);
+    background-size: cover;
+    height: 100%;
+  }
+
+ .sivu {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'Navi Navi Navi Navi Navi Navi'
+    'Esittelyteksti Esittelyteksti Esittelyteksti Omakuva Omakuva Omakuva'
+    'Esittelyteksti Esittelyteksti Esittelyteksti Omakuva Omakuva Omakuva'
+    'Esittelyteksti Esittelyteksti Esittelyteksti Omakuva Omakuva Omakuva'
+    'Esittelyteksti Esittelyteksti Esittelyteksti yhteystiedot yhteystiedot yhteystiedot'
+    'Esittelyteksti Esittelyteksti Esittelyteksti yhteystiedot yhteystiedot yhteystiedot'
+    'Esittelyteksti Esittelyteksti Esittelyteksti yhteystiedot yhteystiedot yhteystiedot'
+    'footer footer footer footer footer footer';
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+
+
+ }
+
+.header {
+    grid-area: header;
+    height: 300px;
+    
+}
+
+.taustakuva {
+  width: 100%;
+  height: 300px;  
+  background-size: cover;
+}
+.Navi {
+    background-color: #faeed1;
+    position: sticky;
+    top: 0;
+    grid-area: Navi;
+    height: 4em;
+    border-bottom: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.Navi ul {
+
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+.Navi ul li {
+    list-style-type: none;
+    display: inline-grid;
+
+}
+
+.Navi li a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border-right: solid black;
+    overflow: hidden;
+    height: 100%;
+    width: 200px;
+    font-family: tahoma;
+    color: black;
+    font-size: 16pt;
+
+}
+
+.Navi ul li a {
+    line-height: 64px;
+}
+
+.Navi li:last-child a:last-child {
+    border-right: none;
+}
+
+.Navi ul li:hover {
+   background-color: #bbab8c;
+}
+
+
+.Esittelyteksti {
+    grid-area: Esittelyteksti;
+    border-style: solid;
+    margin: 7px;
+    height: auto;
+    font-family: tahoma;
+    font-size: 16pt;
+    padding: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.CV {
+    margin: 7px;
+    width: 940px;
+    border-style: solid;
+    font-family: Tahoma;
+    font-size: 16pt;
+    padding: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Portfolio {
+    margin: 7px;
+    width: 950px;
+    display: inline-block;
+    border-style: solid;
+    font-family: Tahoma;
+    font-size: 16pt;
+    padding: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Portfolio div::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+.box {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    width: 33.33%;
+    padding: 10px;
+    border-style: solid;
+    height: 100px;
+    width: 302px;
+    margin: 7px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box:hover {
+    overflow: visible;
+    height: auto;
+    background-color: #bbab8c;
+    transition: 1s ease;
+    border-style: none;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Omakuva {
+    grid-area: Omakuva;
+    border-style: solid;
+    margin-right: 7px;
+    margin-top:  7px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Omakuva img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-style: none;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    
+}
+.yhteystiedot {
+    grid-area: yhteystiedot;
+    border-style: solid;
+    margin-right: 7px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: tahoma;
+    font-size: 12pt;
+    padding: 7px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ .yhteystiedot p {
+    word-wrap: break-word;
+ }
+.yhteystiedot a:visited {
+    color: black;
+}
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa-brands {
+    font-size: 30pt;
+
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+    background-color: #bbab8c;
+    border-style: solid;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    margin-right: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*
+
+.Navi ul li {
+
+}
+
+.Navi li:last-child {
+
+}
+
+.Navi li a {
+
+}
+  
+.Navi li a:hover {
+
+}
+
+ .Navi ul {
+    background-color: #fdf7ea;
+    list-style-type: none;
+    overflow: auto;
+    position: sticky;
+    text-align: center;
+    
+}
+
+.Navi ul li {
+    border-right: 1px solid black;
+    display: inline-block;
+}
+.Navi li:last-child {
+    border-right: none;
+}
+
+.Navi li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16pt;
+    font-family: Tahoma; 
+}
+
+.sivu li a:hover {
+    background-color: blueviolet;
+}
+
+.Esittelyteksti {
+    width: 50%;
+    height: 80%;
+    padding-left: 8px;
+    border-style: solid;
+}
+.Omakuva {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    float:right;
+  }
+  
+  .yhteystiedot {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    float:right;
+  }
+  */
