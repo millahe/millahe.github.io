@@ -37,9 +37,9 @@ body {
 }
 
 .taustakuva {
-  width: 58.7vw;
-  height: 30vh;  
-  background-size: cover;
+    width: 100%;
+    height: 30vh;  
+    background-size: cover;
 }
 .Navi {
     background-color: #faeed1;
@@ -222,9 +222,11 @@ body {
 
 @media only screen and (max-width: 896px) {
 
+
     .sivu {
         margin: 0;
         width: 100%;
+        border-style: none;
     }
 
     .header {
