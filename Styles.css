@@ -106,7 +106,7 @@ body {
 
 .CV {
     margin: 7px;
-    width: 56.8vw;
+    width: auto;
     border-style: solid;
     font-family: Tahoma;
     font-size: 16pt;
@@ -116,7 +116,7 @@ body {
 
 .Portfolio {
     margin: 7px;
-    width: 57.2vw;
+    width: auto;
     display: inline-block;
     border-style: solid;
     font-family: Tahoma;
@@ -135,11 +135,10 @@ body {
     box-sizing: border-box;
     float: left;
     position: relative;
-    width: 33.33%;
     padding: 10px;
     border-style: solid;
     height: 100px;
-    width: 302px;
+    width: auto;
     margin: 7px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -279,13 +278,13 @@ body {
     .Navi li:last-child a:last-child {
         border-right: none;
     }
-    .Esittelyteksti,
+    /*.Esittelyteksti,
     .CV,
     .Portfolio,
     .box {
         width: 90%;
     }
-
+*/
     .Omakuva {
     height: 250px;
     width: auto;
