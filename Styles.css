@@ -71,8 +71,7 @@ body {
     display: inline-block;
     text-align: center;
     border-right: solid black;
-    overflow: hidden;
-    height: 6.8vh;
+    overflow: hidden;    
     width: 10vw;
     font-family: tahoma;
     color: black;
@@ -81,7 +80,7 @@ body {
 }
 
 .Navi ul li a {
-    line-height: 6vh;
+    line-height: 7vh;
 }
 
 .Navi li:last-child a:last-child {
@@ -156,26 +155,27 @@ body {
 
 .Omakuva {
     grid-area: Omakuva;
-    border-style: solid;
     margin-right: 7px;
     margin-top:  7px;
-    width: 12vW;
+    height: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .Omakuva img {
     background-size: cover;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-style: none;
+    max-height: 100%;
+    max-width: 98%;
+    height: auto;
+    object-fit: cover;  
+    border-style: solid;
     margin-top: 1px;
     margin-bottom: 1px;
     
 }
 .yhteystiedot {
     grid-area: yhteystiedot;
-
+    grid-row-end: 6;
     border-style: solid;
     margin-right: 7px;
     margin-top: 7px;
@@ -218,15 +218,16 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Responsiiviset tyylit */
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 896px) {
+
     .sivu {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin: 0;
     }
 
     .header {
-        height: 20vh;
+        height: auto;
+        width: auto;
     }
 
     .taustakuva {
@@ -234,12 +235,46 @@ body {
         height: 20vh;
     }
 
-    .Navi li a {
-        width: auto;
-        padding: 8px;
-        font-size: 14px;
+    .Navi {
+        background-color: #faeed1;
+        position: sticky;
+        top: 0;
+        grid-area: Navi;
+        height: 4em;
+        border-bottom: solid;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     }
-
+    
+    .Navi ul {
+    
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    
+    .Navi ul li {
+        list-style-type: none;
+        display: inline-grid;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .Navi li a {
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        border-right: none;
+        width: 100%;   
+        font-family: tahoma;
+        color: black;
+        font-size: 16pt;
+    
+    }
+    .Navi li:last-child a:last-child {
+        border-right: none;
+    }
     .Esittelyteksti,
     .CV,
     .Portfolio,
@@ -248,10 +283,14 @@ body {
     }
 
     .Omakuva {
-        width: 90%;
+    height: 250px;
+    width: auto;
+    grid-row-end: 3;
     }
 
     .yhteystiedot {
-        width: 90%;
+    height: 250px;
+    grid-row-end: 4;
+    width: auto;
     }
 }
