@@ -172,6 +172,7 @@ body {
 }
 .yhteystiedot {
     grid-area: yhteystiedot;
+
     border-style: solid;
     margin-right: 7px;
     margin-top: 7px;
@@ -213,71 +214,53 @@ body {
     margin-right: 7px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/*
-
-.Navi ul li {
-
+html {
+    min-height: 100%;
 }
 
-.Navi li:last-child {
-
+body {
+    background-image: linear-gradient(#fdf7ea, #faeed1, #ded0b6, #bbab8c);
+    background-size: cover;
+    min-height: 100%;
+    margin: 0;
+    font-family: tahoma;
+    font-size: 16px;
 }
 
-.Navi li a {
+/* Responsiiviset tyylit */
+@media only screen and (max-width: 768px) {
+    .sivu {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
-}
-  
-.Navi li a:hover {
+    .header {
+        height: 20vh;
+    }
 
-}
+    .taustakuva {
+        width: 100%;
+        height: 20vh;
+    }
 
- .Navi ul {
-    background-color: #fdf7ea;
-    list-style-type: none;
-    overflow: auto;
-    position: sticky;
-    text-align: center;
-    
-}
+    .Navi li a {
+        width: auto;
+        padding: 8px;
+        font-size: 14px;
+    }
 
-.Navi ul li {
-    border-right: 1px solid black;
-    display: inline-block;
-}
-.Navi li:last-child {
-    border-right: none;
-}
+    .Esittelyteksti,
+    .CV,
+    .Portfolio,
+    .box {
+        width: 90%;
+    }
 
-.Navi li a {
-    display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 16pt;
-    font-family: Tahoma; 
-}
+    .Omakuva {
+        width: 90%;
+    }
 
-.sivu li a:hover {
-    background-color: blueviolet;
+    .yhteystiedot {
+        width: 90%;
+    }
 }
-
-.Esittelyteksti {
-    width: 50%;
-    height: 80%;
-    padding-left: 8px;
-    border-style: solid;
-}
-.Omakuva {
-    width: 300px;
-    height: 100px;
-    border: 1px solid blue;
-    float:right;
-  }
-  
-  .yhteystiedot {
-    width: 300px;
-    height: 100px;
-    border: 1px solid red;
-    float:right;
-  }
-  */
