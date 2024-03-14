@@ -138,7 +138,7 @@ body {
     padding: 10px;
     border-style: solid;
     height: 100px;
-    width: auto;
+    width: 98%;
     margin: 7px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -260,8 +260,8 @@ body {
     .Navi ul li {
         list-style-type: none;
         display: inline-grid;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 2%;
+        padding-right: 2%;
     }
     
     .Navi li a {
@@ -278,13 +278,16 @@ body {
     .Navi li:last-child a:last-child {
         border-right: none;
     }
-    /*.Esittelyteksti,
-    .CV,
-    .Portfolio,
-    .box {
-        width: 90%;
+    .CV {
+        margin: 7px;
+        width: auto;
     }
-*/
+    
+    .Portfolio {
+        margin: 7px;
+        width: auto;
+        
+    }
     .Omakuva {
     height: 250px;
     width: auto;
